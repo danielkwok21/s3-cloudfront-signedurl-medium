@@ -32,7 +32,7 @@ const cfFullPath = `${cfDomainName}/${s3ContentPath}`
 let signer = new AWS.CloudFront.Signer(accessKeyID, privateKeyContents)
 
 const option = {
-    url: cfFullpath,
+    url: cfFullPath,
     expires: Math.floor((new Date()).getTime()) + (60 * 60 * 1), // 1 hour from now
 }
 
